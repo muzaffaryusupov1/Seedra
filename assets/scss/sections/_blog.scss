@@ -1,0 +1,340 @@
+/* BLOG - START */
+
+.blog{
+    margin: 30px 0;
+
+    &__contents{
+        &__row{
+            display: flex;
+            gap: 30px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            overflow-x: scroll;
+        }
+            @media screen and (max-width: 768px) {
+                display: flex;
+                align-items: center;
+                overflow-x: scroll;
+            }
+    }
+
+    &-left{
+        @media screen and (max-width: 768px) {
+                display: flex;
+                gap: 20px;
+                overflow-x: scroll;
+                ::-webkit-scrollbar{display:none}
+        }
+    }
+
+    &-left_row{
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link{
+        @extend %flex-between;
+        margin-bottom: 42px;
+    }
+
+    &-title{
+        color: $text-color;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -1.8px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 22px;
+        }
+    }
+
+    &-button{
+        color: $green-color;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 178.187%;
+        letter-spacing: -0.56px;
+        padding: 10px 33px;
+        border-radius: 8px;
+        border: 1px solid $secondry-color;
+        background-color: $white-color;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            color: $white-color;
+            background-color: $green-color;
+        }
+    }
+
+    &__card{
+        width: 730px;
+        height: 300px;
+        border-radius: 12px;
+        background-color:  $banner-first-color;
+        padding: 30px 0 30px 30px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+
+        &__content{
+            width: 50%;
+        }
+        
+        @media screen and (max-width: 500px) {
+            width: 400px;
+        }   
+
+        &__dates{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        &__date{
+            color: $first-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 178.187%;
+        }
+
+        &__title{
+            color: $text-color;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 131.25%;
+            letter-spacing: -0.48px;
+            margin-bottom: 8px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 12px;
+            }
+        }
+
+        &__subtitle{
+            color: $text-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 178.187%;
+            margin-bottom: 14px;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 9px;
+            }
+        }
+
+        &__button{
+            border-radius: 8px;
+            border: 1px solid $secondry-color;
+            background-color: $white-color;
+            padding: 11px 33px;
+            transition: all 0.2s ease-in-out;
+            color: $green-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 178.187%;
+            letter-spacing: -0.56px;
+
+            @media screen and (max-width: 500px) {
+                padding: 5px 15px;
+            }
+            &:hover{
+                color: $white-color;
+                background-color: $green-color;
+            }
+        }
+
+        &__image{
+            width: 294px;
+            position: relative;
+           @media screen and (max-width: 500px) {
+            width: 200px;
+            &_img{
+                width: 100%;
+            }
+        }
+        }
+
+        /* BLOG CARD TWO - START */
+
+        &__two{
+            width: 350px;
+            height: 300px;
+            border-radius: 12px;
+            background-color: $blog-card-color;
+            padding: 30px 0 30px 30px;
+            position: relative;
+
+            &__dates{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 8px;
+            }
+
+            &__date{
+                color: $first-color;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 178.187%;
+            }
+
+            &__title{
+                color: $text-color;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 131.25%;
+                letter-spacing: -0.48px;
+                margin-bottom: 8px;
+                @media screen and (max-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+
+
+            &__subtitle{
+                color: $text-color;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 178.187%;
+                margin-bottom: 14px;
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                }
+            }
+    
+            &__button{
+                border-radius: 8px;
+                border: 1px solid $secondry-color;
+                background-color: $white-color;
+                padding: 11px 33px;
+                transition: all 0.2s ease-in-out;
+                color: $green-color;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 178.187%;
+                letter-spacing: -0.56px;
+                &:hover{
+                    color: $white-color;
+                    background-color: $green-color;
+                }
+            }
+
+            &__img{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        /* BLOG CARD TWO - END */
+
+        /* BLOG RIGHT - START */
+
+        &-right{
+
+            @media screen and (max-width: 768px) {
+                height: 300px;
+            }
+            
+            &__cards{
+                width: 350px;
+                height: 630px;
+                padding: 30px;
+                border-radius: 12px;
+                background-color: $banner-first-color;
+                position: relative;
+                @media screen and (max-width: 768px) {
+                    height: 300px;
+                }
+            }
+
+            &__dates{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 8px;
+            }
+
+            &__date{
+                color: $first-color;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 178.187%;
+            }
+
+            &-title{
+                color: $text-color;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 131.25%;
+                letter-spacing: -0.48px;
+                margin-bottom: 14px;
+                @media screen and (max-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+    
+            &__subtitle{
+                color: $first-color;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 178.187%;
+                margin-bottom: 14px;
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                }
+            }
+    
+            &-button{
+                color: $green-color;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 178.187%;
+                letter-spacing: -0.56px;
+                padding: 10px 33px;
+                border-radius: 8px;
+                border: 1px solid $secondry-color;
+                background-color: $white-color;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    color: $white-color;
+                    background-color: $green-color;
+                }
+            }
+            
+            &-image{
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+
+                &_responsive{
+                    display: none;
+                    @media screen and (max-width: 768px) {
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+        /* BLOG RIGHT - END */
+
+    }
+}
+
+/* BLOG - END */

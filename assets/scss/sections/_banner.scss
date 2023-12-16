@@ -1,0 +1,187 @@
+@import '../variables';
+
+/* BANNER - START */
+
+.banner{
+    margin: 32px 0;
+
+    &__wrap{
+        position: relative;
+        border-radius: 24px;
+        background-color: $banner-first-color;
+        padding: 48px;
+        display: flex;
+        overflow: hidden;
+
+        @media screen and (max-width: 768px){
+            flex-direction: column-reverse;
+            padding: 40px 24px;
+        }
+    }
+
+    &__content{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 650px;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__title{
+        color: $text-color;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 112.5%;
+        letter-spacing: -2.4px;
+        margin-bottom: 12px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 28px;
+        }
+    }
+
+    &__subtitle{
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 175%;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__price{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        @media screen and (max-width: 768px){
+            order: -1;
+        }
+    }
+
+    &__new-price{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__main-price{
+        color: $text-color;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 128.571%;
+
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+            color: $red-color;
+        }
+    }
+
+    &__sale{
+        color: $first-color;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 245.455%;
+        text-decoration: line-through;
+    }
+
+    &__buttons{
+        display: flex;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    &__btn{
+        color: $green-color;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 178.187%;
+        letter-spacing: -0.56px;
+        background-color: $white-color;
+        border-radius: 8px;
+        padding: 10px 30px;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            color: $white-color;
+            background-color: $green-color;
+        }
+
+        @media screen and (max-width:768px) {
+            font-size: 14px;
+        }
+
+        &_green{
+            color: $white-color;
+            background-color: $green-color;
+            &:hover{
+                color: $green-color;
+                background-color: $white-color;
+            }
+        }
+    }
+
+    &__img{
+        position: relative;
+        display: none;
+        width: 40%;
+        height: 40%;
+        min-width: 190px;
+        min-height: 190px;
+        margin: 0 auto;
+        z-index: 2;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-bg{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+
+
+        @media screen and (max-width:768px) {
+            top: 0;
+            left: 0;
+
+            // img{
+            // // transform: rotate(-180deg);
+            // }
+        }
+
+        img{
+            vertical-align: bottom;
+        }
+
+        &__desktop{
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &__mobile{
+            display: none;
+
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+        }
+    }
+}
+
+/* BANNER - END */

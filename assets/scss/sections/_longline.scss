@@ -1,0 +1,63 @@
+/* LONGLINE - START */
+
+.longline{
+    margin: 33px 0;
+    &__wrap{
+        flex: 1 1 auto;
+        border-radius: 12px;
+        background-color: $back-color;
+        @extend %flex-between
+    }
+
+    &-title{
+        text-align: center;
+        color: $text-color;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 131.25% ;
+        letter-spacing: -0.48px;
+
+        @media screen and (max-width: 900px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    &-subtitle{
+        color: $first-color;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 178.187%;
+        letter-spacing: -0.56px;
+
+        @media screen and (max-width: 900px) {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 8px;
+        }
+    }
+
+    &-img{
+        @media screen and (max-width:768px) {
+            width: 20%;
+        }
+    }
+
+    &-img2{
+        @media screen and (max-width:768px) {
+            width: 70%;
+            height: 100%;
+        }
+    }
+}
+
+/* LONGLINE - END */

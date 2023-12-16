@@ -1,0 +1,49 @@
+/* LINK - START */
+
+.links{
+    margin: 25px 0;
+
+    &__wrap{
+        @extend %flex-between;
+
+       @media screen and (max-width: 1024px) {
+        overflow-x: scroll;
+       }
+    }
+
+    &-product{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 22px 24px;
+        border-radius: 8px;
+        border: 2px solid $secondry-color;
+        transition: all 0.2s ease-in-out;
+        
+    }
+
+    &__title{
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 178.187%;  
+    }
+    &-product:hover{
+        color: $white-color;
+        background-color: $secondry-color;
+    }
+}
+
+.product-card{
+    width: 350px;
+    height: 512px;
+    border-radius: 8px;
+    border: 2px solid $red-color;
+    &__row{
+        display: flex;
+        gap: 30px;
+    }
+}
+
+
+/* LINK - END */

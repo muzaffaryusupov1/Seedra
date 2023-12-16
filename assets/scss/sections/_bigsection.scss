@@ -1,0 +1,97 @@
+/* BIGSECTIN - START */
+
+.bigsection{
+    margin: 35px 0;
+
+    &__wrap{
+        width: 100%;
+        max-width: 1100px;
+    }
+    &__header{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        @media screen and (max-width: 1024px) {
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
+    }
+
+    &__icon{
+        height: 30px;
+    }
+
+    &-card{
+        width: 30%;
+        padding: 30px;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        border-radius: 8px;
+        border: 2px solid $secondry-color;
+
+        @media screen and (max-width: 950px) {
+            width: calc(50% - 18px);
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        &-header{
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        &_content{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        &__star-title{
+            color: $first-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 178.187%;
+        }
+
+        &_content__title{
+            color: $text-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 156.25% ;
+            letter-spacing: -0.64px;
+        }
+
+        &__bottom{
+            @extend %flex-between;
+        }
+
+        &__price{
+            color: $text-color;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 192.857%;
+        }
+
+        &__icon{
+            border-radius: 8px;
+            border: 1px solid $secondry-color;
+            padding: 12px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover{
+                background-color: $secondry-color;
+            }
+        }
+    }
+
+    &__bottom{
+        display: flex;
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+}
+
+/* BIGSECTIN - END */
