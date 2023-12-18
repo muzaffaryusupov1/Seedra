@@ -76,9 +76,21 @@
         margin-bottom: 30px;
         display: flex;
         align-items: center;
+        // gap: 70px;
+        
+        @media screen and (max-width: 500px) {
+            padding: 25px 0 25px 25px;
+        }  
+
+        @media screen and (max-width: 500px) {
+            padding: 20px 0 20px 20px;
+        }  
+        @media screen and (max-width: 450px) {
+            padding: 10px 0 10px 20px;
+        }  
 
         &__content{
-            width: 50%;
+            width: 53%;
         }
         
         @media screen and (max-width: 500px) {
@@ -151,7 +163,7 @@
         }
 
         &__image{
-            width: 294px;
+            width: 330px;
             position: relative;
            @media screen and (max-width: 500px) {
             width: 200px;
@@ -295,16 +307,18 @@
             }
     
             &-button{
+                border-radius: 8px;
+                border: 1px solid $secondry-color;
+                background-color: $white-color;
+                padding: 11px 33px;
+                transition: all 0.2s ease-in-out;
                 color: $green-color;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 178.187%;
                 letter-spacing: -0.56px;
-                padding: 10px 33px;
-                border-radius: 8px;
-                border: 1px solid $secondry-color;
-                background-color: $white-color;
-                transition: all 0.2s ease-in-out;
+                position: absolute;
+                z-index: 1;
                 &:hover{
                     color: $white-color;
                     background-color: $green-color;

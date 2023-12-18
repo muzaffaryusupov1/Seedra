@@ -1,0 +1,144 @@
+/* SEEDRA - SECTION - START */
+
+.seedra__section{
+    margin: 50px 0;
+    background-color: $white-color;
+    &__wrap{
+        display: flex;
+        gap: 120px;
+        @media screen and (max-width: 768px) {
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 700px) {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 650px) {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        @media screen and (max-width: 500px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__contents{
+        &_title{
+            width: 500px;
+            color: $text-color;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 150%;
+            letter-spacing: -1.8px;
+            @media screen and (max-width: 768px) {
+                width: 500px;
+                font-size: 32px;
+            }
+            @media screen and (max-width: 650px) {
+                width: 100%;
+                font-size: 22px;
+            }
+        }
+
+        &_subtitles{
+            width: 521px;
+            @media screen and (max-width: 768px) {
+                width: 400px;
+            }
+
+            @media screen and (max-width: 650px) {
+                width: 348px;
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 250px;
+            }
+        }
+
+        &_subtitle{
+            width: 521px;
+            color: $text-color;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 175%;
+            margin-bottom: 20px;
+            @media screen and (max-width: 768px) {
+                width: 400px;
+            }
+            @media screen and (max-width: 650px) {
+                width: 300px;
+            }
+            @media screen and (max-width: 500px) {
+                width: 269px;
+            }
+        }
+        &_subtitle1{
+            width: 521px;
+            color: $text-color;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 175%;
+            @media screen and (max-width: 768px) {
+                width: 400px;
+            }
+            @media screen and (max-width: 650px) {
+                width: 300px;
+            }
+            @media screen and (max-width: 500px) {
+                width: 269px;
+            }
+        }
+
+        &_subtitle2{
+            color: $text-color;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 175%;
+            margin-bottom: 20px;
+            @media screen and (max-width: 768px) {
+                width: 400px;
+            }
+            @media screen and (max-width: 650px) {
+                width: 300px;
+            }
+            @media screen and (max-width: 500px) {
+                width: 269px;
+            }
+        }
+        &_subtitle3{
+            width: 521px;
+            color: $text-color;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 175%;
+            @media screen and (max-width: 768px) {
+                width: 400px;
+            }
+            @media screen and (max-width: 650px) {
+                width: 300px;
+            }
+            @media screen and (max-width: 500px) {
+                width: 269px;
+            }
+        }
+    }
+    &__images{
+        width: 600px;
+        flex-shrink: 0;
+        @media screen and (max-width: 768px) {
+            width: 400px;
+        }
+        @media screen and (max-width: 650px) {
+            width: 300px;
+        }
+        @media screen and (max-width: 500px) {
+            width: 269px;
+        }
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+/* SEEDRA - SECTION - END */

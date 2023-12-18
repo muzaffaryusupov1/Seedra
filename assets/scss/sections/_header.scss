@@ -18,6 +18,8 @@
     }
 
     &-nav{
+        display: flex;
+        gap: 16px;
         @media screen and (max-width: 900px) {
             display: none;
         }
@@ -47,19 +49,20 @@
         color: $third-color;
     }
 
-    &-link{
-        :not(:last-child){
-            border-right: 1px solid $secondry-color;
-            padding-right: 16px;
-            margin-right: 16px;
+    &-link{:not(:last-child){
+        border-right: 10px solid $secondry-color;
+        padding-right: 16px;
+        margin-right: 16px;
 
-            @media screen and (max-width: 1024px){
-                margin-right: 10px;
-                padding-right: 10px;
-            }
+        @media screen and (max-width: 1024px){
+            margin-right: 10px;
+            padding-right: 10px;
         }
     }
+        
+}
     
+
     
 
     &-social:not(:last-child){

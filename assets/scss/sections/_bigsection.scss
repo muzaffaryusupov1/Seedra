@@ -81,7 +81,11 @@
             transition: all 0.2s ease-in-out;
 
             &:hover{
-                background-color: $secondry-color;
+                color: $white-color;
+                background-color: $green-color;
+                & path{
+                    fill: $white-color;
+                }
             }
         }
     }

@@ -19,18 +19,37 @@
         border-radius: 8px;
         border: 2px solid $secondry-color;
         transition: all 0.2s ease-in-out;
-        
+    }
+
+    &-product1{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 19px 21px;
+        border-radius: 8px;
+        border: 2px solid $secondry-color;
+        transition: all 0.2s ease-in-out;
     }
 
     &__title{
-        color: $text-color;
         font-size: 14px;
         font-weight: 400;
-        line-height: 178.187%;  
+        line-height: 178.187%;
     }
     &-product:hover{
         color: $white-color;
-        background-color: $secondry-color;
+        background-color: $green-color;
+        & path{
+            fill: $white-color;
+        }
+    }
+
+    &-product1:hover{
+        color: $white-color;
+        background-color: $green-color;
+        & path{
+            fill: $white-color;
+        }
     }
 }
 
